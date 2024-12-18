@@ -1,0 +1,8 @@
+{
+  "name": "Not Fun Tokens",
+  "description": "A very Not Fun collection of tokens by mikeshultz.eth",
+  "image": "https://mikeshultz.com/nft/notfun/images/1.png",
+  "external_link": "https://mikeshultz.com",
+  "seller_fee_basis_points": 1500,
+  "fee_recipient": "0x9283099A29556fCF8fFF5b2Cea2D4F67CB7A7A8b"
+}

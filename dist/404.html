@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>mikeshultz.eth</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "Lora";
+            src: url(Lora-VariableFont_wght.ttf) format("truetype");
+        }
+        @font-face {
+            font-family: "Work";
+            src: url(WorkSans-VariableFont_wght.ttf) format("truetype");
+        }
+
+        body {
+            background: #787878;
+            color: #fff;
+            margin: 0;
+            padding-bottom: 250px;
+        }
+
+        body, p {
+            font-family: "Lora", serif;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: "Work", sans-serif;
+            font-weight: 100;
+        }
+        h1 {
+            font-size: 2.25rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        #error-container {
+            background: rgba(255, 255, 255, 0.25);
+            width: 75%;
+            margin: 0 auto;
+            margin-top: 3rem;
+            padding: 1rem;
+        }
+
+        #app {
+            position: relative;
+            bottom: -50%;
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+        }
+        #face-container {
+            position: fixed;
+            bottom: 0px;
+            left: 100px;;
+        }
+        #face {
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="error-container">
+        <h1>404 Not Found</h1>
+        <p>
+            Hi there!  Sorry for the inconvenience, but the articles I had on this site were all getting pretty old and most of them are likely out of date.  I figured it was time to get rid of them.  You may be interested in <a href="#" id="wayback-link">trying the Wayback machine</a> if you really want to see the previous content.
+        </p>
+        <p>
+            If you really think something is missing and shouldn't be, <a href="mailto:mike@mikeshultz.com">let me know</a>.
+        </p>
+    </div>
+    <div id="face-container">
+        <img id="face" src="8bit.svg" />
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const face = document.getElementById('face')
+            const faceBox = face.getBoundingClientRect()
+
+            const lookHandler = (ev) => {
+                const bound = faceBox.x + (face.width / 2)
+                let src = '8bit.svg'
+                if (ev.pageX < bound) {
+                    src = '8bit-left.svg'
+                }
+                face.src = src
+            }
+
+            // Look direction handling
+            document.onmousemove = lookHandler
+
+            // Tap detection for look
+            document.ontouchstart = lookHandler
+
+            const waybackLink = document.getElementById('wayback-link')
+
+            if (waybackLink) {
+                waybackLink.href = `https://web.archive.org/web/2020*/${window.location.href}`
+            }
+        })
+    </script>
+</body>
+</html>

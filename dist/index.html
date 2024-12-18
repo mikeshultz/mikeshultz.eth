@@ -1,0 +1,487 @@
+<html>
+<head>
+    <title>mikeshultz.eth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        @font-face {
+            font-family: "Lora";
+            src: url(Lora-VariableFont_wght.ttf) format("truetype");
+        }
+        @font-face {
+            font-family: "Work";
+            src: url(WorkSans-VariableFont_wght.ttf) format("truetype");
+        }
+
+        body {
+            background: #787878;
+            margin: 0;
+            padding-bottom: 250px;
+        }
+
+        body, p {
+            font-family: "Lora", serif;
+        }
+
+        p.indent {
+            text-indent: 1rem;
+        }
+        p.indent::first-letter {
+            font-size: 250%;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: "Work", sans-serif;
+            font-weight: 100;
+        }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 400;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+        }
+
+        nav#topnav {
+            display: none;
+        }
+
+        div {}
+        div h2 {
+            margin: 0.5rem;
+        }
+        div .grid {
+            display: block;
+        }
+        div .grid .project-box {
+            flex: none;
+            width: calc(100vw - 3rem);
+            color: #fff;
+            background: rgba(255, 255, 255, 0.25);
+            
+            padding: 1rem;
+            margin: 0.5rem;
+            /* border-radius: 0 1rem 1rem 0; */
+            display: inline-block;
+        }
+        div .grid .project-box a {
+            color: #fff;
+            text-decoration: none;
+        }
+        div .grid .project-box button {
+            width: 250px;
+            display: block;
+            background: none;
+            color: #fff;
+            border: 0;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        div .grid .project-box.abandoned { background: none; }
+        div .grid .project-box.abandoned,
+        div .grid .project-box.abandoned a {
+            color: #ccc;
+        }
+
+        .active-example {
+            background: rgba(255, 255, 255, 0.25);
+            padding: 0.25rem;
+        }
+
+        #app {
+            position: relative;
+            bottom: -50%;
+            margin: 0 auto;
+            height: 150px;
+            width: 150px;
+        }
+
+        #socials { display: none; }
+
+        #face-container {
+            position: fixed;
+            bottom: 0px;
+            left: 10px;
+        }
+        #face {
+            height: 150px;
+            width: 150px;
+        }
+        #top { margin: 0.5rem }
+        #top p { color: #fff; }
+
+        @media (min-width: 450px) {
+
+            nav#topnav {
+                display: block;
+                width: 75%;
+                position: fixed;
+                bottom: 25px;
+                left: calc(100vw - 75%);
+                background: #000;
+            }
+            nav#topnav ul {
+                list-style-type: none;
+                margin: 1rem 0;
+                padding-left: 0;
+                display: flex;
+            }
+            nav#topnav ul li {
+                flex: 1;
+                display: block;
+                float: left;
+                margin-right: 1rem;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            nav#topnav ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            div .grid {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            div .grid .project-box {
+                flex: 1;
+                width: 250px;
+                min-height: 150px;
+                min-width: 250px;
+            }
+
+            #intro {
+                flex: 3;
+                float: left;
+            }
+
+            #socials {
+                display: flex;
+                flex: 1;
+            }
+
+            #face-container {
+                left: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav id="topnav">
+        <ul>
+            <li><a href="#ethereum-software">Ethereum Software</a></li>
+            <li><a href="#ethereum-services">Ethereum Services</a></li>
+            <li><a href="#ethereum-infrastructure">Ethereum Infra</a></li>
+            <li><a href="#libraries">Libraries</a></li>
+            <li><a href="#software">End-User Software</a></li>
+            <li><a href="#other-services">Other Services</a></li>
+        </ul>
+    </nav>
+    <div id="top">
+        <h1>mikeshultz.eth</h1>
+        <p>My name is Mike and I'm a systems and software engineer with over 24 years of experience. Most of my work experience is in software development and devops. I've worked with more platforms, languages, and technologies than I care to enumerate here. Lately I've had a focus on Python and Ethereum with a keen interest in expanding my Rust experience.</p>
+        <p>Below are some of my <span class="active-example">active</span> and abandoned projects. <a href="https://github.com/mikeshultz">Find me on GitHub</a> or reach me at <a href="mailto:mike@mikeshultz.com">mike@mikeshultz.com</a></p>
+    </div>
+    <div id="ethereum-software">
+        <a name="ethereum-software"></a>
+        <h2>Ethereum Software</h2>
+        <div class="grid">
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/py4byte">
+                    <h3>py4byte</h3>
+                    <p>Library for using 4byte.directory and blind-decoding of transactions and events.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/ledger-eth-lib">
+                    <h3>ledger-eth-lib</h3>
+                    <p>Library to interface with ledger-app-eth on Ledger hardware wallets.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/python-eips">
+                    <h3>python-eips</h3>
+                    <p>Library to parse Ethereum EIP and ERC documents into useful Python objects.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/blocks">
+                    <h3>blocks</h3>
+                    <p>For the insane person who wants the blockchain in a relational database(PostgreSQL).</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://solidbyte.org/">
+                    <h3>Solidbyte</h3>
+                    <p>Development toolkit for creating Ethereum smart contracts.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/flake8-vyper">
+                    <h3>flake8-vyper</h3>
+                    <p>Flake8 wrapper to lint Vyper.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/ethereum-pinner">
+                    <h3>ethereum-pinner</h3>
+                    <p>Pins IPFS hashes according to events from a contract.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/icenine">
+                    <h3>Incenine</h3>
+                    <p>Graphical Ethereum cold storage wallet.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="ethereum-service">
+        <a name="ethereum-services"></a>
+        <h2>Ethereum Services</h2>
+        <div class="grid">
+            <div class="project-box">
+                <a href="https://eips.exposed">
+                    <h3>eips.exposed</h3>
+                    <p>Ethereum improvement proposal explorer.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://blocks.lol">
+                    <h3>blocks.lol</h3>
+                    <p>An API-first Ethereum block explorer.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://onclick.money">
+                    <h3>onclick.money</h3>
+                    <p>An experimental ERC20 token and dapp that pays one token for every click of a button.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://scatter.online">
+                    <h3>scatter.online</h3>
+                    <p>Experimental decentralized IPFS pinner service built on Ethereum.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <h3>ethsnap</h3>
+                <p>A service to provide daily-snapshots of go-ethereum chaindata directories as a fast sync option.</p>
+            </div>
+        </div>
+    </div>
+    <div id="ethereum-infra">
+        <a name="ethereum-infrastructure"></a>
+        <h2>Ethereum Infrastructure</h2>
+        <div class="grid">
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/ansible-geth">
+                    <h3>ansible-geth</h3>
+                    <p>Ansible playbooks for setting up go-ethereum nodes.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/ethereum-geth-dev">
+                    <h3>ethereum-geth-dev</h3>
+                    <p>Forked package to quickly create a development chain with go-ethereum using Docker.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="general-software">
+        <a name="libraries"></a>
+        <h2>Libraries</h2>
+        <div class="grid">
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/rawl">
+                    <h3>rawl</h3>
+                    <p>Simplistic database abstraction trying to balance the usefulness of an ORM with the lack of constraints and flexibility of raw SQL.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/python-nimsp">
+                    <h3>python-nimsp</h3>
+                    <p>Python client library for interacting with the National Institute on Money in State Politics API.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="general-software">
+        <a name="software"></a>
+        <h2>End-User Software</h2>
+        <div class="grid">
+            <div class="project-box">
+                <a href="https://dead.pub">
+                    <h3>dead.pub</h3>
+                    <p>Ephemeral permissionless scrach pads to share text.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/doto">
+                    <h3>doto</h3>
+                    <p>Web application to use as a touch panel application to keep track of calendar, TODO items, control WeMo devices, and display the weather.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/dowhen">
+                    <h3>dowhen</h3>
+                    <p>A conditional execution system and scheduler. Pretty much a self-hosted IFTTT.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/authenticator_backup">
+                    <h3>authenticator-backup</h3>
+                    <p>A python utility to back up Google Authenticator using a Web cam.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/orient">
+                    <h3>orient</h3>
+                    <p>A real time Rust STM32 robot that orients itself north for no reason.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/tornado-http-firewall">
+                    <h3>tornado-http-firewall</h3>
+                    <p>An HTTP proxy that utilizes ACLs to control access to URIs.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/pgstorm">
+                    <h3>pgstorm</h3>
+                    <p>A PostgreSQL load tester with basic tests written in python.</p>
+                </a>
+            </div>
+            <div class="project-box">
+                <a href="https://github.com/mikeshultz/orccollector">
+                    <h3>orccollector</h3>
+                    <p>Handy OpenTSDB collectors including Sensu data and DarkSky weather data. Useful when paired with a Grafana frontend.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/sink">
+                    <h3>sink</h3>
+                    <p>Arch Linux AUR installer for the lazy.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/sink">
+                    <h3>sink</h3>
+                    <p>Arch Linux AUR installer for the lazy.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/wikionastick">
+                    <h3>wikionastick</h3>
+                    <p>A wiki that runs on, and renders markdown documents from a thumbdrive.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/undine">
+                    <h3>undine</h3>
+                    <p>A wrapper for handling multi-archive backups with Borg.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/auraio">
+                    <h3>auraio</h3>
+                    <p>Communicates important information using the atmospheric lighting of an RGB LED strip connected to a Raspberry Pi.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/DodgeBallVR">
+                    <h3>DodgeBallVR</h3>
+                    <p>Proof of Concept DodgeBall VR game for the HTC Vive written with C# in the Unity engine.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/pyqual">
+                    <h3>pyqual</h3>
+                    <p>A python+postgresql database quality assurance app.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/xsd2pgsql">
+                    <h3>xsd2pgsql</h3>
+                    <p>Script to create a DB structure from an XML schema document.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="general-services">
+        <a name="other-services"></a>
+        <h2>Other Services</h2>
+        <div class="grid">
+            <div class="project-box">
+                <a href="https://respond.codes">
+                    <h3>respond.codes</h3>
+                    <p>HTTP service that replies with requested HTTP status codes written in Nim.</p>
+                </a>
+            </div>
+            <div class="project-box abandoned">
+                <a href="https://github.com/mikeshultz/whatthediff">
+                    <h3>whatthediff</h3>
+                    <p>Application to track the changes that occur to Web pages.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="face-container">
+        <img id="face" src="8bit.svg" />
+    </div>
+    <script type="text/javascript">
+        /*
+         * @dev Get the first href element found traveling up the DOM
+         * @param el {HTMLElement} to get the HREF for
+         * @param depth {Number} depth of recursion
+         * @returns {string} href value
+         */
+        function getHref(el, depth=0) {
+            if (el.href) {
+                return el.href
+            }
+
+            if (depth < 5 && el.parentElement) {
+                return getHref(el.parentElement, depth + 1)
+            }
+
+            return null
+        }
+
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const face = document.getElementById('face')
+            const faceBox = face.getBoundingClientRect()
+
+            const lookHandler = (ev) => {
+                const bound = faceBox.x + (face.width / 2)
+                let src = '8bit.svg'
+                if (ev.pageX < bound) {
+                    src = '8bit-left.svg'
+                }
+                face.src = src
+            }
+
+            // Look direction handling
+            document.onmousemove = lookHandler
+
+            // Tap detection for look
+            document.ontouchstart = lookHandler
+
+            // Open external links in a new window
+            for (const el of document.getElementsByTagName('a')) {
+                if (!el.href.startsWith(window.location.origin)) {
+                    el.onclick = (ev) => {
+                        ev.preventDefault()
+                        window.open(getHref(ev.target))
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

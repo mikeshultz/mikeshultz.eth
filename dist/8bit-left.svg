@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="400"
+   version="1.1"
+   id="svg24"
+   sodipodi:docname="8bit-left.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata30">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs28" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1400"
+     id="namedview26"
+     showgrid="false"
+     inkscape:zoom="7.14"
+     inkscape:cx="203.38983"
+     inkscape:cy="200"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg24" />
+  <path
+     style="fill:#b8a088; stroke:none;"
+     d="M144 64L144 80L128 80L128 96L112 96L112 128L128 128L128 112L160 112L160 96L256 96L256 112L288 112L288 128L304 128L304 96L288 96L288 80L272 80L272 64L144 64z"
+     id="path4" />
+  <path
+     style="fill:#e5bf9a; stroke:none;"
+     d="M160 96L160 112L128 112L128 128L288 128L288 112L256 112L256 96L160 96z"
+     id="path6" />
+  <path
+     style="fill:#000000; stroke:none;"
+     d="M96 128L96 144L128 144L128 176L144 176L144 192L224 192L224 176L240 176L240 192L320 192L320 128L96 128z"
+     id="path8" />
+  <path
+     style="fill:#b8a088; stroke:none;"
+     d="M112 144L112 160L128 160L128 144L112 144z"
+     id="path10" />
+  <path
+     style="fill:#e5bf9a;stroke:none"
+     d="m 144,144 v 32 h 16 v -16 h 16 v 16 h 48 v -32 h -80 m 96,0 v 32 0 -16 h 16 v 16 h 48 V 144 H 240 M 80,160 v 48 h 32 v -48 z"
+     id="path12"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccccccccccccccccc" />
+  <path
+     style="fill:#3d2800; stroke:none;"
+     d="M112 160L112 208L96 208L96 224L112 224L112 272L128 272L128 288L144 288L144 304L160 304L160 320L256 320L256 304L272 304L272 288L288 288L288 272L304 272L304 192L288 192L288 256L272 256L272 272L160 272L160 256L144 256L144 224L128 224L128 160L112 160z"
+     id="path14" />
+  <path
+     style="fill:#e5bf9a; stroke:none;"
+     d="M128 176L128 224L144 224L144 256L160 256L160 272L272 272L272 256L288 256L288 192L240 192L240 176L224 176L224 192L144 192L144 176L128 176z"
+     id="path16" />
+  <path
+     style="fill:#a48a80; stroke:none;"
+     d="M192 240L192 256L256 256L256 240L192 240z"
+     id="path18" />
+  <path
+     style="fill:#000000; stroke:none;"
+     d="M48 256L48 272L16 272L16 336L0 336L0 400L352 400L352 368L336 368L336 352L320 352L320 336L304 336L304 320L288 320L288 304L256 304L256 320L112 320L112 304L96 304L96 288L112 288L112 256L48 256z"
+     id="path20" />
+  <path
+     style="fill:#e5bf9a; stroke:none;"
+     d="M112 272L112 288L96 288L96 304L112 304L112 320L160 320L160 304L144 304L144 288L128 288L128 272L112 272z"
+     id="path22" />
+</svg>
